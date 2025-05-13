@@ -41,4 +41,4 @@ def sorter_files(files_for_move, move_path):
 while True:
     for extantions in EXTENTIONS_LIST:
         find_files(extantions)
-    time.sleep(30)
+    time.sleep(5)
