@@ -13,13 +13,13 @@ def find_files(target_extensions):
     if files_for_move:
         if target_extensions == TEXT_EXTENTIONS:
             sorter_files(files_for_move, TEXTS_PATH)
-        elif target_extensions == IMAGES_EXTANTIONS:
+        elif target_extensions == IMAGES_EXTENTIONS:
             sorter_files(files_for_move, IMAGES_PATH)
-        elif target_extensions == APP_EXTANTIONS:
+        elif target_extensions == APP_EXTENTIONS:
             sorter_files(files_for_move, APPS_PATH)
         elif target_extensions == ARCHIVE_EXTANTIOS:
             sorter_files(files_for_move, ARCHIVE_PATH)
-        elif target_extensions == MUSIC_EXTANTIONS:
+        elif target_extensions == MUSIC_EXTENTIONS:
             sorter_files(files_for_move, MUSIC_PATH)
         elif target_extensions == PDF_EXTENSIONS:
             sorter_files(files_for_move, PDF_PATH)
@@ -39,6 +39,6 @@ def sorter_files(files_for_move, move_path):
             print(f"Произошла ошибка при перемещении {file}: {e}")
 
 while True:
-    for extantions in EXTENTIONS_LIST:
-        find_files(extantions)
+    for EXTENTIONS in EXTENTIONS_LIST:
+        find_files(EXTENTIONS)
     time.sleep(5)
