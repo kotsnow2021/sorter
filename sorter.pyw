@@ -13,19 +13,19 @@ def find_files(target_extensions):
     if files_for_move:
         if target_extensions == TEXT_EXTENTIONS:
             sorter_files(files_for_move, TEXTS_PATH)
-        if target_extensions == IMAGES_EXTANTIONS:
+        elif target_extensions == IMAGES_EXTANTIONS:
             sorter_files(files_for_move, IMAGES_PATH)
-        if target_extensions == APP_EXTANTIONS:
+        elif target_extensions == APP_EXTANTIONS:
             sorter_files(files_for_move, APPS_PATH)
-        if target_extensions == ARCHIVE_EXTANTIOS:
+        elif target_extensions == ARCHIVE_EXTANTIOS:
             sorter_files(files_for_move, ARCHIVE_PATH)
-        if target_extensions == MUSIC_EXTANTIONS:
+        elif target_extensions == MUSIC_EXTANTIONS:
             sorter_files(files_for_move, MUSIC_PATH)
-        if target_extensions == PDF_EXTENSIONS:
+        elif target_extensions == PDF_EXTENSIONS:
             sorter_files(files_for_move, PDF_PATH)
-        if target_extensions == JAR_EXTENTIONS:
+        elif target_extensions == JAR_EXTENTIONS:
             sorter_files(files_for_move, JAR_PATH)
-        if target_extensions == VIDEOS_EXTENTIONS:
+        elif target_extensions == VIDEOS_EXTENTIONS:
             sorter_files(files_for_move, VIDEOS_PATH)
 
 def sorter_files(files_for_move, move_path):
